@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #007ACC;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content-wrapper {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+}
+
+main {
+    flex: 3;
+    padding-right: 20px;
+}
+
+aside {
+    flex: 1;
+    background-color: #e0f7fa;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.servicio {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #e0f7fa;
+    border-radius: 5px;
+}
+
+.ad {
+    background-color: #d9edf7;
+    border: 1px solid #bce8f1;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #007ACC;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-info, .footer-links, .budget-button {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-links a, .budget-button button {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.budget-button button {
+    background-color: #004d99;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.budget-button button:hover {
+    background-color: #003366;
+}
+
+
+/* responsive */ 
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    main, aside {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .ad, .servicio {
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .footer-links a, .budget-button button {
+        margin: 10px 0;
+    }
+}
